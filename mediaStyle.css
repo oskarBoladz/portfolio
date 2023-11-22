@@ -1,0 +1,20 @@
+@import 'root.css';
+
+/* @media screen and (max-width: 480px) {
+
+} */
+@media screen and (max-width: 1300px)  {
+body{
+    /* background-color: green; */
+    
+}
+.AboutMe {
+    background-position: -100px;
+    & .upAM{
+        & .canvaAM{
+            position: relative;
+            left: 10vw;
+    } 
+    }
+}
+}

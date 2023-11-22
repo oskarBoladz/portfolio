@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+:root{
+    --white100:#f6f0e2;
+    --white200:#bbb7ad;
+    --black100:#1a1a1a;
+    --menuFont:'Roboto', sans-serif;
+
+--h1Font:'Ubuntu', sans-serif;
+
+--h2Font:'Comfortaa', sans-serif;
+
+/* --mig:; */
+
+--acentRed:#ad2e2b;
+--acentBlue:#255ab2;
+}
+/*
+'Lobster', sans-serif
+'Space Grotesk', sans-serif;
+ 'Nanum Myeongjo', serif
+ 'Marcellus', serif;
+
+ rgb(54, 49, 49)
+*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* background-color: rgba(0, 0, 0, .05);
+    -webkit-border-radius: 20px;
+    border-radius: 20px; */
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px 0 0 10px;
+    /* border-radius: 20px; */
+    background:var(--acentRed) ;
+}  
+
+body{
+    background-color:var(--black100);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+}
