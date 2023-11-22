@@ -2,9 +2,10 @@
 
 
 .navBar{
-    z-index: 3;
+    z-index: 999;
     position: sticky;
     top: 0;
+    right:0;
     margin-left: auto;
     /* background-color: red; */
     /* width: 2rem; */
@@ -58,7 +59,7 @@
     position: sticky;
     float: right;
     background-color: initial;
-    width: 1rem;
+    width: 0.4rem;
     height: 100svh;
     top: 0;
     /* margin-right: auto; */
@@ -95,6 +96,7 @@
         padding:16svh 14vw;
         box-sizing: border-box;
         & .textAM{
+            transition: all 0.3s ease;
             float:left;
             z-index: 2;
             position: relative;

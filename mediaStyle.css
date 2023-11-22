@@ -1,8 +1,6 @@
 @import 'root.css';
 
-/* @media screen and (max-width: 480px) {
 
-} */
 @media screen and (max-width: 1300px)  {
 body{
     /* background-color: green; */
@@ -11,10 +9,38 @@ body{
 .AboutMe {
     background-position: -100px;
     & .upAM{
+        
         & .canvaAM{
             position: relative;
             left: 10vw;
     } 
     }
 }
+}
+@media screen and (max-width: 500px) {
+    .navBar{
+        padding: 0.2rem;
+        position: fixed;
+        z-index: 999;
+    }
+    .circle{
+        right: 2rem;
+        margin-left: auto;
+        position: fixed;
+        z-index: 999;
+    }
+    .AboutMe {
+        background-position: -100px;
+        & .upAM{
+            & .textAM{
+                & h1{
+                    font-size: 6rem;
+                }
+            }
+            & .canvaAM{
+                position: relative;
+                left: 10vw;
+        } 
+        }
+    }
 }
