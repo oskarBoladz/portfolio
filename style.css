@@ -2,20 +2,20 @@
 
 
 .navBar{
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    right:0;
-    margin-left: auto;
-    /* background-color: red; */
-    /* width: 2rem; */
+    z-index: 3;
+    position: fixed;
+    top: 0; 
+    right:0; 
+    /* margin-left: auto; */
     width: fit-content;
+    /* width: 2rem; */
     padding: 0.6rem;
     box-sizing: border-box;
     height: 100svh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
+    float: right;
     & a{
         text-decoration: none;
     }
@@ -38,31 +38,29 @@
             transform:  translateY(0rem);
             transition:all 0.2s ease;
             float: left;
-            /* border: 0.5px solid black; */
         }
         &:hover{
 
             & > span{
 
                 
-                /* text-orientation:upright; */
                 transform: translateY(0.45rem);
                 transform: rotate(-0.25turn);
             } 
         } 
     }
-    float: right;
 }
 
 .circle{
     z-index: 3;
-    position: sticky;
+    position: fixed;
     float: right;
     background-color: initial;
     width: 0.4rem;
     height: 100svh;
     top: 0;
-    /* margin-right: auto; */
+    right: 2.8rem;
+    /* margin-left: auto; */
     & #Lcircle{
         transition: all 0.3s ease;
         position:relative;
