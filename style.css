@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+:root{
+    /* --font1:'Montserrat', sans-serif; */
+    --menuFont:'Roboto', sans-serif;
+    --h2Font:'Comfortaa', sans-serif;
+    --h1Font:'Ubuntu', sans-serif;
+
+    --p1:rgba(0,0,0,0.3);
+    --p2:rgba(0,0,0,0.2);
+    --p3:rgba(0,0,0,0.1);
+
+    --o1:#9e9e9e;
+    --o2:#595959;
+
+    --t1:#000000;
+    --t2:#222222;
+    --t3:#3e3e3e;
+
+    --white100:#f6f0e2;
+    --white200:#bbb7ad;
+    --black100:#1a1a1a;
+    --black200:#2a2a2a;
+    
+    --acentRed:#ad2e2b;
+    --acentBlue:#255ab2;
+
+    --bri:2rem;
+}
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    background-color:var(--white100);
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+}
+#background-wrap{
+    width: 100%;
+    height: 100svh;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    filter: blur(200px);
+}
+#s1{
+    pointer-events: none;
+    /* float: left; */
+    width: 70svh;
+    position:absolute;
+    top: -8svh;
+    right: 20%;
+}
+#s3{
+    pointer-events: none;
+    top: 40svh;
+    left: 2%;
+    width: 60svh;
+    position:absolute;
+}
+#s2{
+    pointer-events: none;
+    width: 100svh;
+    top: 30svh;
+    right: -10%;
+    position:absolute;
+}
+/* -------------------------------------- */
+
+#menu-wrap{
+    position: absolute;
+    z-index: 1;
+
+    width: 150svh;
+    height: 90svh;
+    background-color: var(--p3);
+    top: 5svh;
+    left: calc(50% - 75svh);
+    border: 1px solid var(--p2);
+    border-radius:calc(var(--bri) + 0.5rem);
+    /* display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap; */
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25% 10% 65%;
+    box-sizing: border-box;
+    padding: 0.25rem;
+    /* padding:0.5rem; */
+}
+
+#l{
+    border-radius: var(--bri);
+    margin: 0.25rem;
+    grid-row:1/4 ;
+    /* height:100%; */
+    /* width: 50%; */
+    background-color: black;
+}
+#p1{
+    border-radius: var(--bri);
+
+    margin: 0.25rem;
+    /* height:25%; */
+    /* width: 50%; */
+    background-color: red;
+}
+#ps{
+    border-radius: var(--bri);
+
+    margin: 0.25rem;
+    /* height:10%; */
+    /* width: 50%; */
+    background-color: green;
+}
+#menu{
+    border-radius: var(--bri);
+
+    margin: 0.25rem;
+    /* height:65%; */
+    /* width: 50%; */
+    background-color: lightgreen;
+}
