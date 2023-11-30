@@ -7,11 +7,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Jost&family=Source+Code+Pro&display=swap');
+
+
 :root{
-    /* --font1:'Montserrat', sans-serif; */
+    --ftext:'Comfortaa', sans-serif;
+
+    --fhi:'Bebas Neue', sans-serif;
+    --fhii:'Josefin Sans', sans-serif;
+
+    --fcode:'Source Code Pro', monospace;
+
+
+
+
     --menuFont:'Roboto', sans-serif;
-    --h2Font:'Comfortaa', sans-serif;
+    
     --h1Font:'Ubuntu', sans-serif;
+
+
+    --h5font:'Jost', sans-serif;
+
+
 
     --p1:rgba(0,0,0,0.3);
     --p2:rgba(0,0,0,0.2);
@@ -83,11 +101,11 @@ body{
     position: absolute;
     z-index: 1;
 
-    width: 150svh;
-    height: 90svh;
+    width: fit-content;
+    height: fit-content;
     background-color: var(--p3);
     top: 5svh;
-    left: calc(50% - 75svh);
+    left: calc(50% - 40rem);
     border: 1px solid var(--p2);
     border-radius:calc(var(--bri) + 0.5rem);
     /* display: flex;
@@ -95,42 +113,144 @@ body{
     flex-wrap: wrap; */
     
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 25% 10% 65%;
+    grid-template-columns: 40rem 40rem;
+    grid-template-rows: min-content min-content min-content;
     box-sizing: border-box;
     padding: 0.25rem;
     /* padding:0.5rem; */
 }
-
+/* -------------------------------- */
 #l{
-    border-radius: var(--bri);
     margin: 0.25rem;
     grid-row:1/4 ;
     /* height:100%; */
     /* width: 50%; */
-    background-color: black;
+    /* background-color: rgb(131, 124, 124); */
 }
-#p1{
+#me{
+    width: 100%;
+    background-color: var(--p3);
+    height: 16rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+    border-radius:var(--bri);
+    & h1{
+        /* width: 7ch; */
+        line-height: 10rem;
+        margin: 0;
+        font-family:var(--fhi);
+        font-size: 8rem;
+        color: var(--black100);
+        & span{
+            color: var(--acentRed);
+        }
+        & u{
+        text-decoration-color:var(--acentBlue);
+        text-decoration-thickness: 0.4rem;
+        text-underline-offset: 0.5rem;
+    }
+    }
+    & h2{
+        /* width: 7ch; */
+        line-height: 3rem;
+        margin: 0;
+        font-family:var(--fhii);
+        font-size: 3rem;
+        letter-spacing: 0.15rem;
+        color: var(--black100);
+    }
+}
+#me2{
+    margin-top:0.5rem ;
+    width: 100%;
+    background-color: var(--p3);
+    height: 4rem;
+    font-size: 2rem;
+    font-family: var(--fcode);
+    line-height: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1rem;
+    border-radius:var(--bri);
+    & span{
+        color: var(--acentRed);
+    }
+}
+#me3{
+    margin-top:0.5rem ;
+    width: 100%;
+    background-color: var(--p3);
+    height: 20rem;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    font-family: var(--ftext);
+    line-height: 120%;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius:var(--bri);
+    & p{
+        /* width: 17ch; */
+        margin: 0;
+    }
+}
+#control{
+    background-color: var(--p3);
+    width: 100%;
+    margin-top:0.5rem ;
+    height:12rem;
     border-radius: var(--bri);
+}
 
+/* ------------------------------------- */
+#p1{
     margin: 0.25rem;
-    /* height:25%; */
+    height:16rem;
     /* width: 50%; */
-    background-color: red;
+    
+    /* background-color: red; */
+    & #clock{
+        height: 100%;
+        background-color: var(--p3);
+        aspect-ratio: 1;
+        border-radius: var(--bri);
+        margin-right:0.5rem ;
+        float: left;
+    }
+    & #fonts{
+        float: right;
+        height: 100%;
+        width: calc(40rem - 17rem);
+        border-radius: var(--bri);
+        background-color: var(--p3);
+    }
 }
 #ps{
-    border-radius: var(--bri);
-
-    margin: 0.25rem;
-    /* height:10%; */
+    /* margin-top: 0.5rem; */
+    margin:0.25rem;
+    height: 4rem;
     /* width: 50%; */
-    background-color: green;
+    border-radius: var(--bri);
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & .social{
+        text-align: center;
+        height: 100%;
+        width: calc(25% - 0.25rem);
+        background-color: var(--p3);
+        border-radius: var(--bri);
+    }
 }
 #menu{
-    border-radius: var(--bri);
 
     margin: 0.25rem;
-    /* height:65%; */
-    /* width: 50%; */
-    background-color: lightgreen;
+    height:32.5rem;
+    width:calc(40rem - 8px);
+    border-radius: var(--bri);
+    background-color: var(--p3);
 }
