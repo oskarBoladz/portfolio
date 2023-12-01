@@ -101,28 +101,29 @@ body{
     position: absolute;
     z-index: 1;
 
-    width: fit-content;
+    min-width: 80vw;
     height: fit-content;
     background-color: var(--p3);
     top: 5svh;
-    left: calc(50% - 40rem);
+    left: calc(50% - 40vw);
     border: 1px solid var(--p2);
     border-radius:calc(var(--bri) + 0.5rem);
     /* display: flex;
     flex-direction: column; 
     flex-wrap: wrap; */
     
-    display: grid;
+    /* display: grid;
     grid-template-columns: 40rem 40rem;
-    grid-template-rows: min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content; */
     box-sizing: border-box;
     padding: 0.25rem;
     /* padding:0.5rem; */
 }
 /* -------------------------------- */
 #l{
+    width: 40vw;
     margin: 0.25rem;
-    grid-row:1/4 ;
+float: left;
     /* height:100%; */
     /* width: 50%; */
     /* background-color: rgb(131, 124, 124); */
@@ -130,9 +131,13 @@ body{
 #me{
     width: 100%;
     background-color: var(--p3);
-    height: 16rem;
+    height: 32svh;
     box-sizing: border-box;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border-radius:var(--bri);
     & h1{
@@ -206,9 +211,13 @@ body{
 }
 
 /* ------------------------------------- */
+#r{
+    width: 40vw;
+    float: right;
+}
 #p1{
     margin: 0.25rem;
-    height:16rem;
+    height:32svh;
     /* width: 50%; */
     
     /* background-color: red; */
@@ -223,7 +232,7 @@ body{
     & #fonts{
         float: right;
         height: 100%;
-        width: calc(40rem - 17rem);
+        width: calc(40vw - 32svh - 1rem);
         border-radius: var(--bri);
         background-color: var(--p3);
     }
