@@ -148,10 +148,10 @@ align-items: stretch;
     border-radius:var(--bri);
     & h1{
         /* width: 7ch; */
-        line-height: 10rem;
+        line-height: 8vw;
         margin: 0;
         font-family:var(--fhi);
-        font-size: 8rem;
+        font-size: 8vw;
         color: var(--black100);
         & span{
             color: var(--acentRed);
@@ -164,10 +164,10 @@ align-items: stretch;
     }
     & h2{
         /* width: 7ch; */
-        line-height: 3rem;
+        line-height: 4vw;
         margin: 0;
         font-family:var(--fhii);
-        font-size: 3rem;
+        font-size: 3vw;
         letter-spacing: 0.15rem;
         color: var(--black100);
     }
