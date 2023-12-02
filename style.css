@@ -102,7 +102,8 @@ body{
     z-index: 1;
 
     min-width: 80vw;
-    height: fit-content;
+    height:90svh;
+    min-height: fit-content;
     background-color: var(--p3);
     top: 5svh;
     left: calc(50% - 40vw);
@@ -123,7 +124,12 @@ body{
 #l{
     width: 40vw;
     margin: 0.25rem;
+    height: 100%;
 float: left;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+/* daj strech bo controlsy sie nie rozciągają */
     /* height:100%; */
     /* width: 50%; */
     /* background-color: rgb(131, 124, 124); */
@@ -188,9 +194,10 @@ float: left;
     margin-top:0.5rem ;
     width: 100%;
     background-color: var(--p3);
-    height: 20rem;
+    min-height: 26svh;
+    height:fit-content;
     font-size: 3rem;
-    letter-spacing: 0.4rem;
+    /* letter-spacing: 0.4rem; */
     font-family: var(--ftext);
     line-height: 120%;
     font-weight: 500;
@@ -206,7 +213,8 @@ float: left;
     background-color: var(--p3);
     width: 100%;
     margin-top:0.5rem ;
-    height:12rem;
+    min-height:fit-content;
+    height:calc(90svh - 1rem - 32svh - 4rem - 26svh - 2.5rem);
     border-radius: var(--bri);
 }
 
@@ -214,32 +222,35 @@ float: left;
 #r{
     width: 40vw;
     float: right;
+    margin: 0.25rem;
 }
 #p1{
-    margin: 0.25rem;
+    /* margin: 0.25rem; */
     height:32svh;
     /* width: 50%; */
-    
+    width: 100%;
     /* background-color: red; */
     & #clock{
         height: 100%;
         background-color: var(--p3);
         aspect-ratio: 1;
         border-radius: var(--bri);
-        margin-right:0.5rem ;
+        /* margin-right:0.5rem ; */
         float: left;
     }
     & #fonts{
         float: right;
         height: 100%;
-        width: calc(40vw - 32svh - 1rem);
+
+        width: calc(40vw - 32svh - 0.5rem);
         border-radius: var(--bri);
         background-color: var(--p3);
     }
 }
 #ps{
     /* margin-top: 0.5rem; */
-    margin:0.25rem;
+    /* margin:0.25rem; */
+    margin: 0.5rem 0;
     height: 4rem;
     /* width: 50%; */
     border-radius: var(--bri);
@@ -257,9 +268,9 @@ float: left;
 }
 #menu{
 
-    margin: 0.25rem;
-    height:32.5rem;
-    width:calc(40rem - 8px);
+    /* margin: 0.25rem; */
+    height:calc(90svh - 6.5rem - 32svh);
+    width:calc(40vw);
     border-radius: var(--bri);
     background-color: var(--p3);
 }
