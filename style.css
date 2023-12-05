@@ -291,4 +291,25 @@ align-items: stretch;
     width:calc(40vw);
     border-radius: var(--bri);
     background-color: var(--p3);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.option{
+    transition: all 0.3s;
+    font-family: var(--menuFont);
+    font-weight: 300;
+    font-size: 6vw;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    width: 80%;
+    line-height: 7vw;
+    height: 7vw;
+    &:hover{
+        padding: 0 4rem;
+    }
+}
+#option-home, #option-work{
+    border-bottom: 1px black solid;
 }
