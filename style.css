@@ -122,9 +122,8 @@ html{
 }
 #l{
 width: 40vw;
-border: 1px green solid;
 height: 90svh;
-
+transition: filter 0.6s ease;
 display: grid; 
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
    grid-template-columns: 1fr;
@@ -132,7 +131,6 @@ display: grid;
    gap: var(--gappading);
 }
 #r{
-    border: 1px green solid;
     width: 40vw;
     height: 90svh;
 
@@ -161,10 +159,59 @@ display: grid;
 }
 /* ---------------------------------------------------------------- */
 .cf{
+    transition: filter 0.6s ease;
     grid-row: 1/4;
+    display: flex;
+}
+#rwp{
+
+    background-color: var(--p3);
+    /* height:30cqh; */
+    width: 40vw;
+    height:44.5svh ;
+    transform: translateX(50vw);
+    /* height: 10px; */
+    position: fixed;
+    transition: transform 0.8s cubic-bezier(0.41, 0.05, 0, 0.8);
+    /* position: fixed; */
+    border-radius: var(--bri);
 }
 .social{
+    transition: filter 0.6s ease;
 }
 .menu{
     grid-row: 5/9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 340px;
+    & .option{
+        transition: all 0.3s;
+        font-family: var(--menuFont);
+        font-weight: 300;
+        font-size: clamp(5rem,6vw,20rem);
+        box-sizing: border-box;
+        padding: 0 1vw;
+        width: 80%;
+        /* line-height: 7vw; */
+        /* height: 7vw; */
+        &:hover{
+            padding: 0 2rem;
+        }
+    }
+    & #option-home, #option-work{
+        border-bottom: 1px black solid;
+    }
 }
+/* -------------------------------------- */
+#l2{
+    transition: transform 0.8s cubic-bezier(0.7, -0.07, 0.29, 0.9);
+    border-radius: var(--bri);
+    width: 40vw;
+    height: 90svh;
+    position:fixed;
+    background-color: var(--p3);
+    transform: translateY(-100svh);
+}
+
