@@ -146,9 +146,35 @@ display: grid;
 /* --------------------------------------------------------------------- */
 .me1{
     grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    & h1{
+
+        margin: 0;
+        font-size: clamp(6cqh,6vw,20cqh);
+        line-height:clamp(7cqh,8vw,20cqh) ;
+        font-family: var(--fhii);
+        & u{
+            text-decoration-color: var(--acentBlue);
+        }
+        & span{
+        /* transform: scale(4,1); */
+
+            color: var(--acentRed);
+        }
+    }
+    & h2{
+        margin: 0;
+        font-size: clamp(4cqh,3vw,16cqh);
+        font-family: var(--fhii);
+    }
 }
 .me2{
-   
+   font-size: 10cqh;
 }
 .me3{
     grid-row: 5/7;
