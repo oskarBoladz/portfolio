@@ -10,6 +10,7 @@
         flex-direction: column;
         width: calc(100vw - 4rem);
         min-width: fit-content;
+        top: 1rem;
     }
     #l{
         width: 100%;
@@ -25,12 +26,12 @@
         & h1{
             padding: 0;
             margin: 0;
-            font-size: 15cqh;
-            line-height: 17cqh;
+            font-size: clamp(8cqh,12vw,20cqh);
+        line-height:clamp(9cqh,13vw,20cqh) ;
         }
         & h2{
-            font-size: 5cqh;
-            line-height: 7cqh;
+            font-size: clamp(3cqh,6vw,20cqh);
+            line-height:clamp(4cqh,7vw,20cqh) ;
         }
     }
     .me2{
