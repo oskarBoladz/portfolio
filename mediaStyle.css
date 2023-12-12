@@ -1,0 +1,45 @@
+@import url("./root.css");
+
+@media screen and (max-width: 1250px) {
+    html{
+        overflow-y: scroll;
+        height: fit-content;
+        justify-content: center;
+    }
+    .wrapp{
+        flex-direction: column;
+        width: calc(100vw - 4rem);
+        min-width: fit-content;
+    }
+    #l{
+        width: 100%;
+        grid-template-rows: fit-content fit-content fit-content fit-content;
+    }
+    #r{
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .me1{
+        grid-row: 1;
+        justify-content: center;
+        & h1{
+            padding: 0;
+            margin: 0;
+            font-size: 15cqh;
+            line-height: 17cqh;
+        }
+        & h2{
+            font-size: 5cqh;
+            line-height: 7cqh;
+        }
+    }
+    .me2{
+        grid-row: 2;
+    }
+    .me3{
+grid-row: 3;
+    }
+    .me4{
+grid-row: 4;
+    }
+}

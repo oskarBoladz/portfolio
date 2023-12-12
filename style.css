@@ -1,59 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Jost&family=Source+Code+Pro&display=swap');
-
-
-:root{
-    --ftext:'Comfortaa', sans-serif;
-
-    --fhi:'Bebas Neue', sans-serif;
-    --fhii:'Josefin Sans', sans-serif;
-
-    --fcode:'Source Code Pro', monospace;
-
-
-
-
-    --menuFont:'Roboto', sans-serif;
-    
-    --h1Font:'Ubuntu', sans-serif;
-
-
-    --h5font:'Jost', sans-serif;
-
-
-
-    --p1:rgba(0,0,0,0.3);
-    --p2:rgba(0,0,0,0.2);
-    --p3:rgba(0,0,0,0.1);
-
-    --o1:#9e9e9e;
-    --o2:#595959;
-
-    --t1:#000000;
-    --t2:#222222;
-    --t3:#3e3e3e;
-
-    --white100:#f6f0e2;
-    --white200:#bbb7ad;
-    --black100:#1a1a1a;
-    --black200:#2a2a2a;
-    
-    --acentRed:#ad2e2b;
-    --acentBlue:#255ab2;
-
-    --bri:2rem;
-    --gappading:0.5rem;
-}
-
+@import url("./root.css");
 body{
     margin: 0;
 }
@@ -107,11 +52,11 @@ html{
     background-color: var(--p3);
 }
 .wrapp{
+    min-width: 1200px;
     z-index: 3;
     position: relative;
     box-sizing: border-box;
     padding: var(--gappading);
-    
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -121,7 +66,7 @@ html{
     border-radius: calc(var(--bri) + var(--gappading));
 }
 #l{
-width: 40vw;
+width: clamp(calc((1200px / 2) - 0.75rem),40vw,40vw);
 height: 90svh;
 transition: filter 0.8s ease;
 display: grid; 
@@ -131,7 +76,7 @@ display: grid;
    gap: var(--gappading);
 }
 #r{
-    width: 40vw;
+    width: clamp(calc((1200px / 2) - 0.75rem),40vw,40vw);
     height: 90svh;
 
 
@@ -174,7 +119,7 @@ display: grid;
     }
 }
 .me2{
-   font-size: 10cqh;
+   font-size: 1rem;
 }
 .me3{
     grid-row: 5/7;
@@ -193,7 +138,7 @@ display: grid;
 
     background-color: var(--p3);
     /* height:30cqh; */
-    width: 40vw;
+    width: clamp(calc((1200px / 2) - 0.75rem),40vw,40vw);
     height:44.5svh ;
     transform: translateX(50vw);
     /* height: 10px; */
@@ -234,7 +179,7 @@ display: grid;
 #l2{
     transition: transform 0.8s cubic-bezier(0.7, -0.07, 0.29, 0.9);
     border-radius: var(--bri);
-    width: 40vw;
+    width: clamp(calc((1200px / 2) - 0.75rem),40vw,40vw);
     height: 90svh;
     position:fixed;
     background-color: var(--p3);
