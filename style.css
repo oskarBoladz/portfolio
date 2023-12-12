@@ -119,7 +119,15 @@ display: grid;
     }
 }
 .me2{
-   font-size: 1rem;
+    /* display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; */
+    font-family: var(--fcode);
+   font-size: 6cqh;
+   display: flex;
+   align-items: center;
+    justify-content: center;
 }
 .me3{
     grid-row: 5/7;
