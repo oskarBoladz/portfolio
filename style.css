@@ -124,8 +124,11 @@ display: grid;
     flex-direction: row;
     justify-content: center; */
     font-family: var(--fcode);
-   font-size: 6cqh;
+   /* font-size: 6cqh; */
+   font-size:clamp(3rem,3cqw,200px);
+   letter-spacing: max(0.4cqw, 10px);
    display: flex;
+   /* text-wrap: nowrap; */
    align-items: center;
     justify-content: center;
 }
