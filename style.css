@@ -146,7 +146,6 @@ display: grid;
     display: flex;
 }
 #rwp{
-
     background-color: var(--p3);
     /* height:30cqh; */
     width: clamp(calc((1200px / 2) - 0.75rem),40vw,40vw);
@@ -162,12 +161,15 @@ display: grid;
     transition: filter 0.8s ease;
 }
 .menu{
+    /* position: relative; */
+
     grid-row: 5/9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: 340px;
+
     & .option{
         transition: all 0.3s;
         font-family: var(--menuFont);
@@ -178,6 +180,10 @@ display: grid;
         width: 80%;
         /* line-height: 7vw; */
         /* height: 7vw; */
+            & a{
+text-decoration: none;
+color: black;
+}
         &:hover{
             padding: 0 2rem;
         }
@@ -197,3 +203,6 @@ display: grid;
     transform: translateY(-100svh);
 }
 
+/* #work:target #l2 {
+background-color: red;
+} */
